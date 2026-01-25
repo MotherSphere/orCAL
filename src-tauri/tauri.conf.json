@@ -1,0 +1,33 @@
+{
+  "build": {
+    "withGlobalTauri": true,
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../ui",
+    "distDir": "../ui"
+  },
+  "package": {
+    "productName": "orCAL",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "title": "orCAL",
+        "width": 360,
+        "height": 720,
+        "resizable": false,
+        "transparent": true,
+        "decorations": false
+      }
+    ],
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.orcal.app"
+    }
+  }
+}

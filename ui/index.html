@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>orCAL - Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="calculator-app">
+      <section class="calculator-phone-frame">
+        <div class="drag-region" data-tauri-drag-region aria-hidden="true"></div>
+        <header class="calculator-status" data-tauri-drag-region>
+          <div class="status">
+            <div class="status-time" aria-live="polite">--:--</div>
+            <div class="status-icons" aria-label="Connection status">
+              <span class="status-icon" aria-hidden="true">📶</span>
+              <button
+                class="status-icon status-icon-button"
+                type="button"
+                data-action="minimize"
+                aria-label="Minimize"
+              >
+                📡
+              </button>
+              <button
+                class="status-icon status-icon-button"
+                type="button"
+                data-action="battery"
+                aria-label="Battery 100%"
+              >
+                🔋
+              </button>
+            </div>
+          </div>
+          <div class="status-message" role="status" aria-live="polite"></div>
+          <div class="status-brand">orCAL</div>
+        </header>
+
+        <div class="theme-toggle" role="group" aria-label="Change theme">
+          <button class="theme-toggle-button" type="button" aria-pressed="false">
+            <span class="theme-toggle-icon" aria-hidden="true">☀️</span>
+            <span class="theme-toggle-label" aria-live="polite">Latte</span>
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+        </div>
+
+        <section class="calculator-screen" aria-live="polite">
+          <div class="screen-expression" data-expression></div>
+          <div class="screen-result-wrapper">
+            <div class="screen-result" data-result>0</div>
+            <div class="screen-result-tooltip" data-result-tooltip role="tooltip">0</div>
+          </div>
+        </section>
+
+        <section class="calculator-keypad" aria-label="Calculator keypad"></section>
+
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
