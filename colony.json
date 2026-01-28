@@ -1,5 +1,6 @@
 {
   "name": "orCAL",
+  "category": "Utilities",
   "platforms": ["windows", "linux"],
   "releaseFiles": ["orCAL.exe", "orCAL"]
 }
