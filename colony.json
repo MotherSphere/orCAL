@@ -2,5 +2,8 @@
   "name": "orCAL",
   "category": "Utilities",
   "platforms": ["windows", "linux"],
-  "releaseFiles": ["orCAL.exe", "orCAL"]
+  "releaseFiles": {
+    "windows": { "tag": "Windows", "file": "orCAL.exe" },
+    "linux": { "tag": "Linux", "file": "orCAL" }
+  }
 }
