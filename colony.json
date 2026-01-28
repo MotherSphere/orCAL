@@ -1,0 +1,5 @@
+{
+  "name": "orCAL",
+  "platforms": ["windows", "linux"],
+  "releaseFiles": ["orCAL.exe", "orCAL"]
+}
